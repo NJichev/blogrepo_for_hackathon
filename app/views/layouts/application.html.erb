@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Microblog</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+  <style>
+#iframe {
+  float:right;
+}
+  </style>
+</head>
+<body>
+  <div id="iframe">
+    <iframe src="http://localhost:3000/" width="400" height="700" frameborder="0"></iframe>
+  </div>
+
+  <%= yield %>
+
+</body>
+</html>
